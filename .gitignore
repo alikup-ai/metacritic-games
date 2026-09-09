@@ -1,0 +1,28 @@
+node_modules/
+dist/
+coverage/
+
+# Артефакты Next.js и E2E
+web/.next/
+web/out/
+web/test-results/
+web/playwright-report/
+web/tsconfig.tsbuildinfo
+
+# Секреты: никогда не попадают в Git (общее правило по секретам)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Логи выполнения — рабочие артефакты, в Git не хранятся
+logs/ai/runtime/*.jsonl
+
+# ВНИМАНИЕ: logs/ai/raw и logs/ai/merged НЕ игнорируются намеренно.
+# Это обязательный deliverable ТЗ (сырые логи AI-переписки). Правило,
+# исключавшее logs/**/*.jsonl целиком, не давало их закоммитить.
+# Перед публикацией обязателен secret scan этих файлов.
+
+.DS_Store
+*.log

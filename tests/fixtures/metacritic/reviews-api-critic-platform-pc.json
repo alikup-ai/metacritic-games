@@ -1,0 +1,257 @@
+{
+  "_fixture": {
+    "name": "reviews-api-critic-platform-pc",
+    "source": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList",
+    "capturedAt": "2026-09-08",
+    "note": "Платформа задаётся сегментом пути /platform/pc/. totalResults=33 совпадает со счётчиком PC на карточке игры.",
+    "originalItemCount": 5,
+    "totalResults": 33
+  },
+  "data": {
+    "id": 1400193818,
+    "totalResults": 33,
+    "items": [
+      {
+        "quote": "The Witcher 3 says no to all of this - it's a great game with a fully realized setting, it's a joy to play, the business model behind it treats its customers like human beings, and it delivers a story that finally hits the tone of the books.",
+        "score": 90,
+        "url": "http://www.rpgamer.com/games/witcher/witcher3/reviews/witcher3strev1.html",
+        "date": "2016-01-28",
+        "author": "",
+        "authorSlug": null,
+        "image": null,
+        "publicationName": "RPGamer",
+        "publicationSlug": "rpgamer",
+        "reviewedProduct": {
+          "id": 1400193818,
+          "type": "games",
+          "title": "The Witcher 3: Wild Hunt",
+          "url": "/game/the-witcher-3-wild-hunt/",
+          "criticScoreSummary": {
+            "url": "/game/the-witcher-3-wild-hunt/critic-reviews/?platform=pc",
+            "score": 93
+          },
+          "platform": {
+            "id": 1533000068,
+            "name": "PC"
+          },
+          "gameTaxonomy": {
+            "game": {
+              "id": 1400193818,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "platform": {
+              "id": 1533000068,
+              "name": "PC"
+            }
+          }
+        },
+        "platform": "PC"
+      },
+      {
+        "quote": "Probably the best open-world RPG ever made, but it still falls prey to some of the genre's worst traps.",
+        "score": 100,
+        "url": "http://www.pcworld.com/article/2932282/the-witcher-3-wild-hunt-pc-review-an-utter-masterpiece-that-reveals-the-fundamental-flaws-in-open-w.html",
+        "date": "2016-01-20",
+        "author": "",
+        "authorSlug": null,
+        "image": null,
+        "publicationName": "PCWorld",
+        "publicationSlug": "pcworld",
+        "reviewedProduct": {
+          "id": 1400193818,
+          "type": "games",
+          "title": "The Witcher 3: Wild Hunt",
+          "url": "/game/the-witcher-3-wild-hunt/",
+          "criticScoreSummary": {
+            "url": "/game/the-witcher-3-wild-hunt/critic-reviews/?platform=pc",
+            "score": 93
+          },
+          "platform": {
+            "id": 1533000068,
+            "name": "PC"
+          },
+          "gameTaxonomy": {
+            "game": {
+              "id": 1400193818,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "platform": {
+              "id": 1533000068,
+              "name": "PC"
+            }
+          }
+        },
+        "platform": "PC"
+      },
+      {
+        "quote": "It's an absurd value proposition for a game where every moment seems hand-crafted. It's not flawless, but the game's few faults won't diminish the growing return on your investment. Buy it and set aside some time.",
+        "score": null,
+        "url": "http://arstechnica.com/gaming/2015/05/the-witcher-3-wild-hunt-review-hunting-fiends-for-fun-and-forever/",
+        "date": "2015-12-09",
+        "author": "",
+        "authorSlug": null,
+        "image": null,
+        "publicationName": "Ars Technica",
+        "publicationSlug": "ars-technica",
+        "reviewedProduct": {
+          "id": 1400193818,
+          "type": "games",
+          "title": "The Witcher 3: Wild Hunt",
+          "url": "/game/the-witcher-3-wild-hunt/",
+          "criticScoreSummary": {
+            "url": "/game/the-witcher-3-wild-hunt/critic-reviews/?platform=pc",
+            "score": 93
+          },
+          "platform": {
+            "id": 1533000068,
+            "name": "PC"
+          },
+          "gameTaxonomy": {
+            "game": {
+              "id": 1400193818,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "platform": {
+              "id": 1533000068,
+              "name": "PC"
+            }
+          }
+        },
+        "platform": "PC"
+      },
+      {
+        "quote": "I've made it pretty clear that it's hardly a flawless game, but that doesn't change the fact that The Witcher 3: Wild Hunt is something pretty bloody special and you should absolutely play it.",
+        "score": 80,
+        "url": "http://www.pcinvasion.com/the-witcher-3-wild-hunt-review",
+        "date": "2015-11-04",
+        "author": "",
+        "authorSlug": null,
+        "image": null,
+        "publicationName": "PC Invasion",
+        "publicationSlug": "pc-invasion",
+        "reviewedProduct": {
+          "id": 1400193818,
+          "type": "games",
+          "title": "The Witcher 3: Wild Hunt",
+          "url": "/game/the-witcher-3-wild-hunt/",
+          "criticScoreSummary": {
+            "url": "/game/the-witcher-3-wild-hunt/critic-reviews/?platform=pc",
+            "score": 93
+          },
+          "platform": {
+            "id": 1533000068,
+            "name": "PC"
+          },
+          "gameTaxonomy": {
+            "game": {
+              "id": 1400193818,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "platform": {
+              "id": 1533000068,
+              "name": "PC"
+            }
+          }
+        },
+        "platform": "PC"
+      },
+      {
+        "quote": "I would gladly hand the game a 100 and call it game of the forever, but slow plot movement, a quest where Geralt walked over an edge to his death, and a variety of other nitpicks and time sinks makes me have to say that this game isn't anywhere to perfect - legendary, in its own right, memorable, but it's not perfect.",
+        "score": 90,
+        "url": "http://www.tentonhammer.com/reviews/witcher-iii-wild-hunt-review",
+        "date": "2015-11-01",
+        "author": "",
+        "authorSlug": null,
+        "image": null,
+        "publicationName": "Ten Ton Hammer",
+        "publicationSlug": "ten-ton-hammer",
+        "reviewedProduct": {
+          "id": 1400193818,
+          "type": "games",
+          "title": "The Witcher 3: Wild Hunt",
+          "url": "/game/the-witcher-3-wild-hunt/",
+          "criticScoreSummary": {
+            "url": "/game/the-witcher-3-wild-hunt/critic-reviews/?platform=pc",
+            "score": 93
+          },
+          "platform": {
+            "id": 1533000068,
+            "name": "PC"
+          },
+          "gameTaxonomy": {
+            "game": {
+              "id": 1400193818,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "platform": {
+              "id": 1533000068,
+              "name": "PC"
+            }
+          }
+        },
+        "platform": "PC"
+      }
+    ]
+  },
+  "links": {
+    "self": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList"
+    },
+    "prev": {
+      "href": null
+    },
+    "next": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=5&limit=5&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList"
+    },
+    "first": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList"
+    },
+    "last": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=30&limit=5&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList"
+    },
+    "filterOptions": [
+      {
+        "label": "All Reviews",
+        "value": "all",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Positive Reviews",
+        "value": "positive",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=0&limit=5&filterBySentiment=positive&sort=date&componentName=critic-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Mixed Reviews",
+        "value": "neutral",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=0&limit=5&filterBySentiment=neutral&sort=date&componentName=critic-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Negative Reviews",
+        "value": "negative",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=0&limit=5&filterBySentiment=negative&sort=date&componentName=critic-reviews&componentType=ReviewList"
+      }
+    ],
+    "sortOptions": [
+      {
+        "label": "Metascore",
+        "value": "score",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=0&limit=5&filterBySentiment=all&sort=score&componentName=critic-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Recently Added",
+        "value": "date",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Publication (A-Z)",
+        "value": "publication",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/the-witcher-3-wild-hunt/platform/pc/web?offset=0&limit=5&filterBySentiment=all&sort=publication&componentName=critic-reviews&componentType=ReviewList"
+      }
+    ]
+  },
+  "meta": {
+    "componentName": "critic-reviews",
+    "componentDisplayName": null,
+    "componentType": "ReviewList"
+  }
+}

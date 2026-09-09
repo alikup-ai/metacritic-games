@@ -1,0 +1,17 @@
+# Отдельная БД для тестов: изолирована от рабочей, данные не переживают перезапуск.
+services:
+  postgres-test:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: metacritic_test
+    ports:
+      - "5433:5432"
+    tmpfs:
+      - /var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d metacritic_test"]
+      interval: 3s
+      timeout: 3s
+      retries: 20

@@ -1,0 +1,96 @@
+# Полный стенд: база, API, обработчик и веб-интерфейс.
+#
+# Секретов здесь нет: значения берутся из окружения либо из файла .env,
+# который не хранится в Git. Плейсхолдеры — в .env.example.
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-metacritic}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-metacritic}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # Обслуживает HTTP-запросы. Обработку не ведёт.
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      APP_ROLE: api
+      DATABASE_URL: postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-metacritic}
+      API_PORT: 3001
+      API_HOST: 0.0.0.0
+      # Планировщик в роли api не запускается в любом случае
+      SCHEDULER_ENABLED: "false"
+      # Задайте ADMIN_TOKEN в .env, чтобы включить ручной запуск
+      ADMIN_TOKEN: ${ADMIN_TOKEN}
+      LLM_ENABLED: ${LLM_ENABLED:-false}
+      LLM_API_KEY: ${LLM_API_KEY}
+      LLM_MODEL: ${LLM_MODEL:-anthropic/claude-haiku-4.5}
+      # Обогащение видеообзорами выполняется в роли api: разбор идёт
+      # при обращении к /api/games/:id/video. Воркеру эти ключи не нужны.
+      # Без флага или без ключа функция молча отключается (ADR-0005).
+      YOUTUBE_ENABLED: ${YOUTUBE_ENABLED:-false}
+      YOUTUBE_API_KEY: ${YOUTUBE_API_KEY}
+      SUPADATA_API_KEY: ${SUPADATA_API_KEY}
+      METACRITIC_USER_AGENT: ${METACRITIC_USER_AGENT:-metacritic-games-demo/1.0}
+    ports:
+      - "3001:3001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Ведёт обработку по расписанию. HTTP не обслуживает.
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      APP_ROLE: worker
+      DATABASE_URL: postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-metacritic}
+      SCHEDULER_ENABLED: ${SCHEDULER_ENABLED:-true}
+      SCHEDULER_INTERVAL_MINUTES: ${SCHEDULER_INTERVAL_MINUTES:-60}
+      BATCH_SIZE: ${BATCH_SIZE:-20}
+      LLM_ENABLED: ${LLM_ENABLED:-false}
+      LLM_API_KEY: ${LLM_API_KEY}
+      LLM_MODEL: ${LLM_MODEL:-anthropic/claude-haiku-4.5}
+      METACRITIC_USER_AGENT: ${METACRITIC_USER_AGENT:-metacritic-games-demo/1.0}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    # Проверка живости через HTTP невозможна: роль worker не слушает порт
+    healthcheck:
+      test: ["CMD-SHELL", "pgrep -f 'src/app/main.ts' > /dev/null || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+  web:
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+    environment:
+      # Адрес виден только серверу Next; в браузер не попадает
+      API_BASE_URL: http://api:3001
+      # Нужен серверной части Next: ручной запуск выполняется серверным
+      # действием. Без префикса NEXT_PUBLIC_ — в браузер и в сборку не попадает.
+      ADMIN_TOKEN: ${ADMIN_TOKEN}
+    ports:
+      - "3000:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  pgdata:

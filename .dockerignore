@@ -1,0 +1,13 @@
+node_modules
+web/node_modules
+web/.next
+dist
+coverage
+logs/**/*.jsonl
+tests
+web/e2e
+web/test-results
+web/playwright-report
+.git
+.env
+*.log

@@ -1,0 +1,758 @@
+/*
+ * Базовые стили.
+ *
+ * Собственные, без UI-библиотеки: набор компонентов невелик, а зависимость
+ * весом в сотни килобайт ради карточек и кнопок не оправдана.
+ */
+
+:root {
+  --bg: #0f1116;
+  --bg-elevated: #171a21;
+  --bg-subtle: #1e222b;
+  --border: #2a2f3a;
+  --text: #e8eaed;
+  --text-muted: #9aa3b2;
+  --accent: #4c8dff;
+  --accent-hover: #6ba0ff;
+
+  /* Цвета оценок: зелёный/жёлтый/красный по шкале Metacritic */
+  --score-high: #00ce7a;
+  --score-mid: #ffbd3f;
+  --score-low: #ff6874;
+
+  --warn-bg: #2d2417;
+  --warn-border: #6b5220;
+  --warn-text: #f0c674;
+
+  --radius: 10px;
+  --space: 1rem;
+  --max-width: 1200px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f7f9;
+    --bg-elevated: #ffffff;
+    --bg-subtle: #eef0f4;
+    --border: #d9dee6;
+    --text: #16181d;
+    --text-muted: #5b6472;
+    --accent: #1a5fd0;
+    --accent-hover: #14489e;
+
+    --warn-bg: #fdf6e3;
+    --warn-border: #e0c169;
+    --warn-text: #7a5c12;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Плавная прокрутка отключается для тех, кто просил уменьшить движение */
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 0.5em;
+  font-weight: 650;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+h2 {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+h3 {
+  font-size: 1.05rem;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* Фокус виден всегда: без него навигация с клавиатуры невозможна */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Скрыто визуально, но доступно программам чтения с экрана */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Переход к содержимому — первый элемент в порядке обхода */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background: var(--accent);
+  color: #fff;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space);
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.site-header__title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.site-header__title a {
+  color: var(--text);
+}
+
+.site-header__tagline {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* Ссылка на мониторинг прижата вправо */
+.site-header__link {
+  margin-left: auto;
+  font-size: 0.9375rem;
+}
+
+main {
+  padding-bottom: 4rem;
+}
+
+/* --- Панель фильтров --- */
+
+.filters {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 700px) {
+  .filters__row {
+    grid-template-columns: 2fr 1fr 1fr 1fr auto;
+    align-items: end;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field__label {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  font: inherit;
+  font-size: 0.9375rem;
+  color: var(--text);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background: var(--accent-hover);
+  text-decoration: none;
+  color: #fff;
+}
+
+.button--secondary {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.button--secondary:hover {
+  background: var(--bg-subtle);
+  color: var(--text);
+}
+
+/* --- Карточки игр --- */
+
+.game-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.game-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.game-card__link {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.game-card__link:hover {
+  text-decoration: none;
+}
+
+.game-card__link:hover .game-card__title {
+  color: var(--accent);
+}
+
+.game-card__cover {
+  aspect-ratio: 3 / 4;
+  background: var(--bg-subtle);
+  object-fit: cover;
+  width: 100%;
+}
+
+.game-card__cover--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.game-card__body {
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.game-card__title {
+  font-size: 1rem;
+  font-weight: 650;
+  margin: 0;
+}
+
+.game-card__meta {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.game-card__scores {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+/* --- Оценки --- */
+
+.score {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 3.25rem;
+  padding: 0.3rem 0.45rem;
+  border-radius: 8px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+}
+
+.score__value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.score__label {
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.score--high .score__value {
+  color: var(--score-high);
+}
+.score--mid .score__value {
+  color: var(--score-mid);
+}
+.score--low .score__value {
+  color: var(--score-low);
+}
+.score--none .score__value {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* --- Страница игры --- */
+
+.game-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 760px) {
+  .game-header {
+    grid-template-columns: 260px 1fr;
+  }
+}
+
+.game-header__cover {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  width: 100%;
+}
+
+.definition-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.4rem 1rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.9375rem;
+}
+
+.definition-list dt {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.definition-list dd {
+  margin: 0;
+}
+
+.section {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.platform-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.platform-table th,
+.platform-table td {
+  text-align: left;
+  padding: 0.55rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.platform-table th {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Таблица прокручивается по горизонтали, страница — нет */
+.table-scroll {
+  overflow-x: auto;
+}
+
+/* --- Анализ --- */
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .analysis-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.analysis-card__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.coverage {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* Неполные данные выделяются, а не прячутся */
+.coverage--warning {
+  background: var(--warn-bg);
+  border-color: var(--warn-border);
+  color: var(--warn-text);
+}
+
+.coverage__line + .coverage__line {
+  margin-top: 0.35rem;
+}
+
+.point-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.point-list__item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  font-size: 0.9375rem;
+}
+
+.point-list__marker {
+  flex-shrink: 0;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.point-list--liked .point-list__marker {
+  color: var(--score-high);
+}
+
+.point-list--disliked .point-list__marker {
+  color: var(--score-low);
+}
+
+.theme-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.theme {
+  border-left: 3px solid var(--border);
+  padding-left: 0.75rem;
+}
+
+.theme--positive {
+  border-left-color: var(--score-high);
+}
+.theme--negative {
+  border-left-color: var(--score-low);
+}
+.theme--mixed,
+.theme--neutral {
+  border-left-color: var(--score-mid);
+}
+
+.theme__name {
+  font-weight: 650;
+  font-size: 0.9375rem;
+}
+
+.theme__description {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* --- Состояния --- */
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+}
+
+.empty-state__title {
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.notice {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+/* --- Пагинация --- */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.pagination__status {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.pagination__spacer {
+  display: inline-block;
+  min-width: 5.5rem;
+}
+
+/* --- Загрузка --- */
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--bg-subtle) 25%,
+    var(--border) 50%,
+    var(--bg-subtle) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: var(--radius);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.skeleton--card {
+  aspect-ratio: 3 / 4;
+}
+
+.skeleton--text {
+  height: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* --- Похожие игры --- */
+
+.similar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.similar-item__link {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  height: 100%;
+}
+
+.similar-item__link:hover {
+  text-decoration: none;
+}
+
+.similar-item__link:hover .similar-item__title {
+  color: var(--accent);
+}
+
+.similar-item__cover {
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+}
+
+.similar-item__cover--empty {
+  display: block;
+}
+
+.similar-item__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.similar-item__title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Причина сходства: вспомогательная подпись, не главный текст */
+.similar-item__reason {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+/* --- Мониторинг --- */
+
+/* Состояние обработчика: цвет несёт смысл, но не единственный признак —
+   рядом всегда есть текст */
+.badge--running {
+  border-color: var(--score-high);
+  color: var(--score-high);
+}
+
+.badge--stalled {
+  border-color: var(--score-low);
+  color: var(--score-low);
+}
+
+.badge--idle {
+  color: var(--text-muted);
+}
+
+.badge--run-completed {
+  border-color: var(--score-high);
+  color: var(--score-high);
+}
+
+.badge--run-running {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.badge--run-failed,
+.badge--run-blocked {
+  border-color: var(--score-low);
+  color: var(--score-low);
+}
+
+.badge--run-skipped {
+  color: var(--text-muted);
+}

@@ -1,0 +1,41 @@
+{
+  "name": "metacritic-games",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Сервис ежечасного сбора данных об играх с Metacritic",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start:api": "node --import tsx src/app/main.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "lint:boundaries": "depcruise src --config .dependency-cruiser.cjs",
+    "migrate": "node --import tsx src/shared/db/migrate.ts up",
+    "migrate:status": "node --import tsx src/shared/db/migrate.ts status",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:watch": "vitest",
+    "test:metacritic-live": "vitest run --config vitest.live.config.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "pg": "^8.13.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/pg": "^8.11.10",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "dependency-cruiser": "^16.8.0",
+    "eslint": "^8.57.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

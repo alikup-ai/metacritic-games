@@ -1,0 +1,272 @@
+{
+  "_fixture": {
+    "name": "reviews-api-user-page2",
+    "source": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=5&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList",
+    "capturedAt": "2026-09-08",
+    "note": "Вторая страница (offset=5). Пересечения с первой нет; links.prev/next заполнены.",
+    "originalItemCount": 5,
+    "totalResults": 6595
+  },
+  "data": {
+    "id": "1400627895",
+    "totalResults": 6595,
+    "items": [
+      {
+        "id": "bade19d9-a365-4fc2-933d-90019c30c279",
+        "quote": "The culmination of everything Michael Zaki-san has done right in all of Fromsoft's other games set in an unbelievable adventure of epic proportions simply dripping with artistic genius and effort.",
+        "score": 10,
+        "thumbsUp": null,
+        "thumbsDown": null,
+        "date": "2026-08-28",
+        "author": "CurryMcFlurri",
+        "version": 1787940843292,
+        "spoiler": false,
+        "reviewedProduct": {
+          "id": 1400627895,
+          "type": "games",
+          "title": "Elden Ring",
+          "url": "/game/elden-ring/",
+          "platform": {
+            "id": 1500000128,
+            "name": "PlayStation 5"
+          },
+          "gameTaxonomy": {
+            "family": {
+              "id": 1200497664,
+              "name": "Elden Ring"
+            },
+            "title": {
+              "id": 1300501979,
+              "name": "Elden Ring"
+            },
+            "game": {
+              "id": 1400627895,
+              "name": "Elden Ring"
+            },
+            "platform": {
+              "id": 1500000128,
+              "name": "PlayStation 5"
+            }
+          }
+        },
+        "platform": "PlayStation 5"
+      },
+      {
+        "id": "de4bed51-9688-4458-b89d-618c7485ac60",
+        "quote": "Elden Ring is hands down the peak of open-world RPGs. It doesn't clutter your map with icons or hold your hand — it trusts you to explore. The sense of discovery is unmatched. Every cave, mountain, and hidden path conceals a massive secret, making it impossible to stop until you’ve cleared every single inch of the map. With endless build options, incredible boss fights, and a breathtaking atmosphere, it offers absolute freedom and peak satisfaction. A flawless 10/10 masterpiece. Must play!",
+        "score": 10,
+        "thumbsUp": null,
+        "thumbsDown": null,
+        "date": "2026-08-27",
+        "author": "aganbayev",
+        "version": 1787902468119,
+        "spoiler": false,
+        "reviewedProduct": {
+          "id": 1400627895,
+          "type": "games",
+          "title": "Elden Ring",
+          "url": "/game/elden-ring/",
+          "platform": {
+            "id": 1500000128,
+            "name": "PlayStation 5"
+          },
+          "gameTaxonomy": {
+            "family": {
+              "id": 1200497664,
+              "name": "Elden Ring"
+            },
+            "title": {
+              "id": 1300501979,
+              "name": "Elden Ring"
+            },
+            "game": {
+              "id": 1400627895,
+              "name": "Elden Ring"
+            },
+            "platform": {
+              "id": 1500000128,
+              "name": "PlayStation 5"
+            }
+          }
+        },
+        "platform": "PlayStation 5"
+      },
+      {
+        "id": "06b7e08a-5fdc-409b-b659-bf476c993e4b",
+        "quote": "A hard challenge, for one who is willing to do so. My favorite souls game, and the easiest to get into.",
+        "score": 8,
+        "thumbsUp": null,
+        "thumbsDown": null,
+        "date": "2026-08-23",
+        "author": "Agentfox12344",
+        "version": 1787512160034,
+        "spoiler": false,
+        "reviewedProduct": {
+          "id": 1400627895,
+          "type": "games",
+          "title": "Elden Ring",
+          "url": "/game/elden-ring/",
+          "platform": {
+            "id": 1500000128,
+            "name": "PlayStation 5"
+          },
+          "gameTaxonomy": {
+            "family": {
+              "id": 1200497664,
+              "name": "Elden Ring"
+            },
+            "title": {
+              "id": 1300501979,
+              "name": "Elden Ring"
+            },
+            "game": {
+              "id": 1400627895,
+              "name": "Elden Ring"
+            },
+            "platform": {
+              "id": 1500000128,
+              "name": "PlayStation 5"
+            }
+          }
+        },
+        "platform": "PlayStation 5"
+      },
+      {
+        "id": "ed4e5b95-ed52-4c2c-8923-9a840ca9e5af",
+        "quote": "Simply one of the best game ever created, once you understand that is a souls game and you need to learn pattern etc you really enjoyed it. The open world is massive and beautiful with a lot of secret",
+        "score": 10,
+        "thumbsUp": null,
+        "thumbsDown": null,
+        "date": "2026-08-19",
+        "author": "Toshikage",
+        "version": 1787160453558,
+        "spoiler": false,
+        "reviewedProduct": {
+          "id": 1400627895,
+          "type": "games",
+          "title": "Elden Ring",
+          "url": "/game/elden-ring/",
+          "platform": {
+            "id": 1500000128,
+            "name": "PlayStation 5"
+          },
+          "gameTaxonomy": {
+            "family": {
+              "id": 1200497664,
+              "name": "Elden Ring"
+            },
+            "title": {
+              "id": 1300501979,
+              "name": "Elden Ring"
+            },
+            "game": {
+              "id": 1400627895,
+              "name": "Elden Ring"
+            },
+            "platform": {
+              "id": 1500000128,
+              "name": "PlayStation 5"
+            }
+          }
+        },
+        "platform": "PlayStation 5"
+      },
+      {
+        "id": "91fec3b0-b2e4-470e-82cf-051ae2054a83",
+        "quote": "The absolute pinnacle of open worlds ever crafted in the medium. Everything from the castles, to the huge empty landscapes, to the immaculate combat, to the dark dungeons and caves, to the cinematic and beautiful boss fights, to the story, intertwines and comes together to make an experience on one of the highest levels we’ve ever seen in fiction",
+        "score": 10,
+        "thumbsUp": null,
+        "thumbsDown": null,
+        "date": "2026-08-15",
+        "author": "fleis-on-fire69",
+        "version": 1786814299691,
+        "spoiler": false,
+        "reviewedProduct": {
+          "id": 1400627895,
+          "type": "games",
+          "title": "Elden Ring",
+          "url": "/game/elden-ring/",
+          "platform": {
+            "id": 1500000128,
+            "name": "PlayStation 5"
+          },
+          "gameTaxonomy": {
+            "family": {
+              "id": 1200497664,
+              "name": "Elden Ring"
+            },
+            "title": {
+              "id": 1300501979,
+              "name": "Elden Ring"
+            },
+            "game": {
+              "id": 1400627895,
+              "name": "Elden Ring"
+            },
+            "platform": {
+              "id": 1500000128,
+              "name": "PlayStation 5"
+            }
+          }
+        },
+        "platform": "PlayStation 5"
+      }
+    ]
+  },
+  "links": {
+    "self": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=5&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "prev": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "next": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=10&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "first": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "last": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=6590&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "filterOptions": [
+      {
+        "label": "All Reviews",
+        "value": "all",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Positive Reviews",
+        "value": "positive",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=0&limit=5&filterBySentiment=positive&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Mixed Reviews",
+        "value": "neutral",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=0&limit=5&filterBySentiment=neutral&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Negative Reviews",
+        "value": "negative",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=0&limit=5&filterBySentiment=negative&sort=date&componentName=user-reviews&componentType=ReviewList"
+      }
+    ],
+    "sortOptions": [
+      {
+        "label": "Recently Added",
+        "value": "date",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Score",
+        "value": "score",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/elden-ring/web?offset=0&limit=5&filterBySentiment=all&sort=score&componentName=user-reviews&componentType=ReviewList"
+      }
+    ]
+  },
+  "meta": {
+    "componentName": "user-reviews",
+    "componentDisplayName": null,
+    "componentType": "ReviewList"
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "_fixture": {
+    "name": "reviews-api-user-platform-switch",
+    "source": "https://backend.metacritic.com/reviews/metacritic/user/games/the-witcher-3-wild-hunt/platform/nintendo-switch/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList",
+    "capturedAt": "2026-09-08",
+    "note": "Пользовательские отзывы по платформе. Малое количество (37). platform в каждом отзыве соответствует запросу.",
+    "originalItemCount": 5,
+    "totalResults": 37
+  },
+  "data": {
+    "id": "1400616505",
+    "totalResults": 37,
+    "items": [
+      {
+        "id": "f9ed1984-f6fe-4630-b688-4bad6414055d",
+        "quote": "No geral, o jogo é sensacional. O cavalo tem sérios problemas de locomoção, que sinceramente, me desanima muito usar ele.\nos gráficos (pelo menos no switch 1)não são grandes coisas, mas são sim bonitos em algum momento.\nalgumas das dificuldades mais baixas acabam muito a graça do jogo, principalmente quando você vai jogar as dlcs. \nAs dlcs valem cada centavo, histórias incríveis e emocionantes.\nsem muito o que falar da história, não sou muito de chorar, mas me senti na pele do geralt em alguns momentos, o final (pelo menos o meu) me deixou reflexivo por uns dias.\nesse jogo tem uma das cutscenes mais lindas que já vi: \"a origem do preconceito*",
+        "score": 9,
+        "thumbsUp": null,
+        "thumbsDown": null,
+        "date": "2026-02-22",
+        "author": "Joogab13",
+        "version": 1771791309901,
+        "spoiler": false,
+        "reviewedProduct": {
+          "id": 1400616505,
+          "type": "games",
+          "title": "The Witcher 3: Wild Hunt",
+          "url": "/game/the-witcher-3-wild-hunt/",
+          "platform": {
+            "id": 1500000124,
+            "name": "Nintendo Switch"
+          },
+          "gameTaxonomy": {
+            "family": {
+              "id": 1200167462,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "title": {
+              "id": 1300169072,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "game": {
+              "id": 1400616505,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "platform": {
+              "id": 1500000124,
+              "name": "Nintendo Switch"
+            }
+          }
+        },
+        "platform": "Nintendo Switch"
+      },
+      {
+        "id": "d5eac130-bda1-4522-b398-33563b9bb607",
+        "quote": "Amí parecer es un exelente pedazo de Juego yo diría qué en el apartamento visual con un parche se arregla.",
+        "score": 10,
+        "thumbsUp": null,
+        "thumbsDown": null,
+        "date": "2026-01-01",
+        "author": "Nayron",
+        "version": 1767238756725,
+        "spoiler": false,
+        "reviewedProduct": {
+          "id": 1400616505,
+          "type": "games",
+          "title": "The Witcher 3: Wild Hunt",
+          "url": "/game/the-witcher-3-wild-hunt/",
+          "platform": {
+            "id": 1500000124,
+            "name": "Nintendo Switch"
+          },
+          "gameTaxonomy": {
+            "family": {
+              "id": 1200167462,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "title": {
+              "id": 1300169072,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "game": {
+              "id": 1400616505,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "platform": {
+              "id": 1500000124,
+              "name": "Nintendo Switch"
+            }
+          }
+        },
+        "platform": "Nintendo Switch"
+      },
+      {
+        "id": "155ec0f1-fa1d-42eb-8daf-ce66c99f02e8",
+        "quote": "It's insane that this game runs on the Nintendo Switch. I have nothing but praise for CD Projekt Red for managing to port this masterpiece so we can play it on a portable device.",
+        "score": 10,
+        "thumbsUp": null,
+        "thumbsDown": null,
+        "date": "2025-12-11",
+        "author": "Psendziuk",
+        "version": 1765470948973,
+        "spoiler": false,
+        "reviewedProduct": {
+          "id": 1400616505,
+          "type": "games",
+          "title": "The Witcher 3: Wild Hunt",
+          "url": "/game/the-witcher-3-wild-hunt/",
+          "platform": {
+            "id": 1500000124,
+            "name": "Nintendo Switch"
+          },
+          "gameTaxonomy": {
+            "family": {
+              "id": 1200167462,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "title": {
+              "id": 1300169072,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "game": {
+              "id": 1400616505,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "platform": {
+              "id": 1500000124,
+              "name": "Nintendo Switch"
+            }
+          }
+        },
+        "platform": "Nintendo Switch"
+      },
+      {
+        "id": "794d843d-ee57-49a9-b0ad-6b4b36c44921",
+        "quote": "Best game, no additional words needed. Have cross platform save, so you can enjoy on switch/xbox/ps/pc. This feature lets you enjoy game in your bed, plane, camping near the sea, perfect for gamer like me",
+        "score": 10,
+        "thumbsUp": null,
+        "thumbsDown": null,
+        "date": "2025-09-15",
+        "author": "Doncemonas",
+        "version": 1757932273349,
+        "spoiler": false,
+        "reviewedProduct": {
+          "id": 1400616505,
+          "type": "games",
+          "title": "The Witcher 3: Wild Hunt",
+          "url": "/game/the-witcher-3-wild-hunt/",
+          "platform": {
+            "id": 1500000124,
+            "name": "Nintendo Switch"
+          },
+          "gameTaxonomy": {
+            "family": {
+              "id": 1200167462,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "title": {
+              "id": 1300169072,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "game": {
+              "id": 1400616505,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "platform": {
+              "id": 1500000124,
+              "name": "Nintendo Switch"
+            }
+          }
+        },
+        "platform": "Nintendo Switch"
+      },
+      {
+        "id": "73293bd4-5fdc-4eec-8a0e-11a60cf203bb",
+        "quote": "LELELEYLEYLEYLELELELELELELEEYYYYLELELEYLELELEYLELELELELELELLELELEYLELELELELELEYYYYY!!",
+        "score": 8,
+        "thumbsUp": null,
+        "thumbsDown": null,
+        "date": "2025-08-28",
+        "author": "Horpiest",
+        "version": 1756413153824,
+        "spoiler": false,
+        "reviewedProduct": {
+          "id": 1400616505,
+          "type": "games",
+          "title": "The Witcher 3: Wild Hunt",
+          "url": "/game/the-witcher-3-wild-hunt/",
+          "platform": {
+            "id": 1500000124,
+            "name": "Nintendo Switch"
+          },
+          "gameTaxonomy": {
+            "family": {
+              "id": 1200167462,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "title": {
+              "id": 1300169072,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "game": {
+              "id": 1400616505,
+              "name": "The Witcher 3: Wild Hunt"
+            },
+            "platform": {
+              "id": 1500000124,
+              "name": "Nintendo Switch"
+            }
+          }
+        },
+        "platform": "Nintendo Switch"
+      }
+    ]
+  },
+  "links": {
+    "self": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/the-witcher-3-wild-hunt/platform/nintendo-switch/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "prev": {
+      "href": null
+    },
+    "next": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/the-witcher-3-wild-hunt/platform/nintendo-switch/web?offset=5&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "first": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/the-witcher-3-wild-hunt/platform/nintendo-switch/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "last": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/the-witcher-3-wild-hunt/platform/nintendo-switch/web?offset=35&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "filterOptions": [
+      {
+        "label": "All Reviews",
+        "value": "all",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/the-witcher-3-wild-hunt/platform/nintendo-switch/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Positive Reviews",
+        "value": "positive",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/the-witcher-3-wild-hunt/platform/nintendo-switch/web?offset=0&limit=5&filterBySentiment=positive&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Mixed Reviews",
+        "value": "neutral",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/the-witcher-3-wild-hunt/platform/nintendo-switch/web?offset=0&limit=5&filterBySentiment=neutral&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Negative Reviews",
+        "value": "negative",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/the-witcher-3-wild-hunt/platform/nintendo-switch/web?offset=0&limit=5&filterBySentiment=negative&sort=date&componentName=user-reviews&componentType=ReviewList"
+      }
+    ],
+    "sortOptions": [
+      {
+        "label": "Recently Added",
+        "value": "date",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/the-witcher-3-wild-hunt/platform/nintendo-switch/web?offset=0&limit=5&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Score",
+        "value": "score",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/the-witcher-3-wild-hunt/platform/nintendo-switch/web?offset=0&limit=5&filterBySentiment=all&sort=score&componentName=user-reviews&componentType=ReviewList"
+      }
+    ]
+  },
+  "meta": {
+    "componentName": "user-reviews",
+    "componentDisplayName": null,
+    "componentType": "ReviewList"
+  }
+}

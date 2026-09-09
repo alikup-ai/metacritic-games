@@ -1,0 +1,71 @@
+{
+  "_fixture": {
+    "name": "reviews-api-user-empty",
+    "source": "https://backend.metacritic.com/reviews/metacritic/user/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList",
+    "capturedAt": "2026-09-08",
+    "note": "Отзывов нет: HTTP 200 с пустым items и totalResults=0. НЕ ошибка.",
+    "originalItemCount": 0,
+    "totalResults": 0
+  },
+  "data": {
+    "id": "1400857225",
+    "totalResults": 0,
+    "items": []
+  },
+  "links": {
+    "self": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "prev": {
+      "href": null
+    },
+    "next": {
+      "href": null
+    },
+    "first": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "last": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/user/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+    },
+    "filterOptions": [
+      {
+        "label": "All Reviews",
+        "value": "all",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Positive Reviews",
+        "value": "positive",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=positive&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Mixed Reviews",
+        "value": "neutral",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=neutral&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Negative Reviews",
+        "value": "negative",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=negative&sort=date&componentName=user-reviews&componentType=ReviewList"
+      }
+    ],
+    "sortOptions": [
+      {
+        "label": "Recently Added",
+        "value": "date",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=user-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Score",
+        "value": "score",
+        "href": "https://backend.metacritic.com/reviews/metacritic/user/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=score&componentName=user-reviews&componentType=ReviewList"
+      }
+    ]
+  },
+  "meta": {
+    "componentName": "user-reviews",
+    "componentDisplayName": null,
+    "componentType": "ReviewList"
+  }
+}

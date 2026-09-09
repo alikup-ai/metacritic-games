@@ -1,0 +1,257 @@
+{
+  "_fixture": {
+    "name": "reviews-api-critic-few",
+    "source": "https://backend.metacritic.com/reviews/metacritic/critic/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList",
+    "capturedAt": "2026-09-08",
+    "note": "Мало критических отзывов (9) — меньше размера страницы.",
+    "originalItemCount": 9,
+    "totalResults": 9
+  },
+  "data": {
+    "id": 1400857225,
+    "totalResults": 9,
+    "items": [
+      {
+        "quote": "At €40.99 (or even €61.99 for the brave souls who wanted a few days of early access), Halloween: The Game is a very sour treat—one that sometimes feels like a bad prank. Between its deplorable technical polish and its riddled-with-holes game design, Illfonic’s new asymmetrical horror game gives the impression that no lessons have been learned since the days of Friday the 13th. Much like the cheap exploitation slashers of the 1980s, the genre seems doomed to navel-gazing and stagnation, appealing only to a handful of enthusiasts undeterred by rough edges, poor special effects, and ham-fisted gore. That’s fair enough. It’s even fun at times. But it’s hard to truly recommend to the average player.",
+        "score": 40,
+        "url": "https://www.gamekult.com/jeux/halloween-3050888753/test.html",
+        "date": "2026-09-07",
+        "author": "",
+        "authorSlug": null,
+        "image": null,
+        "publicationName": "Gamekult",
+        "publicationSlug": "gamekult",
+        "reviewedProduct": {
+          "id": 1400857225,
+          "type": "games",
+          "title": "Halloween: The Game",
+          "url": "/game/halloween-the-game/",
+          "criticScoreSummary": {
+            "url": "/game/halloween-the-game/critic-reviews/?platform=pc",
+            "score": 72
+          },
+          "platform": {
+            "id": 1533000068,
+            "name": "PC"
+          },
+          "gameTaxonomy": {
+            "game": {
+              "id": 1400857225,
+              "name": "Halloween: The Game"
+            },
+            "platform": {
+              "id": 1533000068,
+              "name": "PC"
+            }
+          }
+        },
+        "platform": "PC"
+      },
+      {
+        "quote": "People often like to stack up every asymmetrical horror game to Dead by Daylight. I’ve never felt that makes sense. Games like Halloween aren’t trying to replace that genre titan; they’re seeking to live alongside it. To do that, they need a distinct and exciting gameplay loop and to capture the tone of their source material. Halloween achieves both of these things, giving players a vibes-heavy experience befitting the timeless film while also offering a unique hook that keeps the game from feeling like a rehash of the many horror multiplayer games that came before it. Games like Halloween don’t make me think the landscape is oversaturated. It makes me excited to see what teams that love horror the way IllFonic does will do next, because here, with Halloween, they nailed it.",
+        "score": 80,
+        "url": "https://www.gamespot.com/reviews/halloween-the-game-review/",
+        "date": "2026-09-03",
+        "author": "",
+        "authorSlug": null,
+        "image": null,
+        "publicationName": "GameSpot",
+        "publicationSlug": "gamespot",
+        "reviewedProduct": {
+          "id": 1400857225,
+          "type": "games",
+          "title": "Halloween: The Game",
+          "url": "/game/halloween-the-game/",
+          "criticScoreSummary": {
+            "url": "/game/halloween-the-game/critic-reviews/?platform=pc",
+            "score": 76
+          },
+          "platform": {
+            "id": 1533000068,
+            "name": "PC"
+          },
+          "gameTaxonomy": {
+            "game": {
+              "id": 1400857225,
+              "name": "Halloween: The Game"
+            },
+            "platform": {
+              "id": 1533000068,
+              "name": "PC"
+            }
+          }
+        },
+        "platform": "PC"
+      },
+      {
+        "quote": "Halloween: The Game is a tense and cinematic asymmetrical horror experience that gives Michael Myers and Haddonfield a strong video game adaptation. Its unique focus on protecting NPC residents, enjoyable killer and hero gameplay, and faithful atmosphere help it stand apart, though unreliable AI, lengthy matches, and concerns about long-term variety keep it from fully realizing its potential.",
+        "score": 70,
+        "url": "https://noisypixel.net/halloween-the-game-review/",
+        "date": "2026-09-03",
+        "author": "",
+        "authorSlug": null,
+        "image": null,
+        "publicationName": "Noisy Pixel",
+        "publicationSlug": "noisy-pixel",
+        "reviewedProduct": {
+          "id": 1400857225,
+          "type": "games",
+          "title": "Halloween: The Game",
+          "url": "/game/halloween-the-game/",
+          "criticScoreSummary": {
+            "url": "/game/halloween-the-game/critic-reviews/?platform=pc",
+            "score": 76
+          },
+          "platform": {
+            "id": 1533000068,
+            "name": "PC"
+          },
+          "gameTaxonomy": {
+            "game": {
+              "id": 1400857225,
+              "name": "Halloween: The Game"
+            },
+            "platform": {
+              "id": 1533000068,
+              "name": "PC"
+            }
+          }
+        },
+        "platform": "PC"
+      },
+      {
+        "quote": "It is absolutely about violence, but it is equally about anticipation. Halloween: The Game may not be the cleanest asymmetrical horror game I've played, but it is one of the more atmospheric. Its Haddonfield is gorgeous, and its multiplayer creates plenty of unpredictable encounters. Stepping into Michael Myers' boots is exactly the kind of absurd fun a Halloween game should offer.",
+        "score": 80,
+        "url": "https://www.thegamer.com/halloween-the-game-review-michael-myers-haddonfield/",
+        "date": "2026-09-03",
+        "author": "",
+        "authorSlug": null,
+        "image": null,
+        "publicationName": "TheGamer",
+        "publicationSlug": "thegamer",
+        "reviewedProduct": {
+          "id": 1400857225,
+          "type": "games",
+          "title": "Halloween: The Game",
+          "url": "/game/halloween-the-game/",
+          "criticScoreSummary": {
+            "url": "/game/halloween-the-game/critic-reviews/?platform=pc",
+            "score": 76
+          },
+          "platform": {
+            "id": 1533000068,
+            "name": "PC"
+          },
+          "gameTaxonomy": {
+            "game": {
+              "id": 1400857225,
+              "name": "Halloween: The Game"
+            },
+            "platform": {
+              "id": 1533000068,
+              "name": "PC"
+            }
+          }
+        },
+        "platform": "PC"
+      },
+      {
+        "quote": "Halloween: The Game isn’t my favorite of the IP-based asymmetrical horror games, but it’s still a good one. Sure, it’s got some janky animations and can be a bit overfamiliar at times, but these games, like their movie inspirations, are enjoyable despite their flaws. For me, the fun varies greatly based on the crew you’re playing with and how you interact with each other. It’s releasing right in time for spooky season, and it’s one I’m excited to play with some friends as part of our Halloween festivities. ",
+        "score": 70,
+        "url": "https://www.shacknews.com/article/150591/halloween-the-game-review-score",
+        "date": "2026-09-03",
+        "author": "",
+        "authorSlug": null,
+        "image": null,
+        "publicationName": "Shacknews",
+        "publicationSlug": "shacknews",
+        "reviewedProduct": {
+          "id": 1400857225,
+          "type": "games",
+          "title": "Halloween: The Game",
+          "url": "/game/halloween-the-game/",
+          "criticScoreSummary": {
+            "url": "/game/halloween-the-game/critic-reviews/?platform=pc",
+            "score": 76
+          },
+          "platform": {
+            "id": 1533000068,
+            "name": "PC"
+          },
+          "gameTaxonomy": {
+            "game": {
+              "id": 1400857225,
+              "name": "Halloween: The Game"
+            },
+            "platform": {
+              "id": 1533000068,
+              "name": "PC"
+            }
+          }
+        },
+        "platform": "PC"
+      }
+    ]
+  },
+  "links": {
+    "self": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList"
+    },
+    "prev": {
+      "href": null
+    },
+    "next": {
+      "href": null
+    },
+    "first": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList"
+    },
+    "last": {
+      "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList"
+    },
+    "filterOptions": [
+      {
+        "label": "All Reviews",
+        "value": "all",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Positive Reviews",
+        "value": "positive",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=positive&sort=date&componentName=critic-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Mixed Reviews",
+        "value": "neutral",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=neutral&sort=date&componentName=critic-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Negative Reviews",
+        "value": "negative",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=negative&sort=date&componentName=critic-reviews&componentType=ReviewList"
+      }
+    ],
+    "sortOptions": [
+      {
+        "label": "Metascore",
+        "value": "score",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=score&componentName=critic-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Recently Added",
+        "value": "date",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=date&componentName=critic-reviews&componentType=ReviewList"
+      },
+      {
+        "label": "Publication (A-Z)",
+        "value": "publication",
+        "href": "https://backend.metacritic.com/reviews/metacritic/critic/games/halloween-the-game/web?offset=0&limit=10&filterBySentiment=all&sort=publication&componentName=critic-reviews&componentType=ReviewList"
+      }
+    ]
+  },
+  "meta": {
+    "componentName": "critic-reviews",
+    "componentDisplayName": null,
+    "componentType": "ReviewList"
+  }
+}

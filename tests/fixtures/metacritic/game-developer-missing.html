@@ -1,0 +1,27 @@
+<!-- FIXTURE game-developer-missing | СИНТЕТИЧЕСКАЯ (не снимок реальной страницы) | создано 2026-09-07 -->
+<!--
+  Назначение: проверить ветку developer = null / developer_status = 'unknown'.
+
+  Почему синтетическая: на 30 проверенных страницах Metacritic (2026-09-07)
+  блок разработчика присутствовал ВСЕГДА и всегда был заполнен. Реального
+  снимка с пустым значением получить не удалось.
+
+  Фикстура НЕ утверждает, что такая разметка встречается на сайте. Она
+  фиксирует контракт парсера: при пустом блоке подставлять null и статус
+  'unknown', а НЕ издателя (ADR-0003). Разметка скопирована с реальной
+  страницы, удалено только значение.
+-->
+<div id="fx-developer"><div class="flex flex-col items-stretch gap-2 pt-8 max-lg:pt-0" data-testid="hero-summary-developer"><p class="m-0 text-sm leading-[1.75rem]"><span class="mr-1 text-base font-bold text-gray-900">Developer:</span></p></div></div>
+
+<!-- ФРАГМЕНТ: JSON-LD, где publisher ЕСТЬ — парсер не должен подставить его как developer -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Fixture Game Without Developer",
+  "publisher": [
+    { "@type": "Organization", "name": "Some Publisher Ltd" }
+  ],
+  "gamePlatform": ["PC"]
+}
+</script>
